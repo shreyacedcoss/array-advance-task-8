@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task8</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <button onclick="debug();">show</button>
+    please enter salary:<input id="sal" type="number" placeholder="salary"></input>
+    
+    
+</body>
+<script>
+    var obj = {
+        Id : "1",
+        Name : "john",
+        salary : "",
+    };
+    function debug(){
+        var sal = document.getElementById("sal").value;
+        obj.salary = sal;
+        if (obj.salary <= 0){
+            debugger;
+            alert ("please enter the correct value")
+            
+        }
+        else if(obj.salary >0){
+            var src =
+        "<table border=1><tr><th>ID</th><th>Name</th><th>Salary</th></tr>";
+      
+      
+      
+      
+            
+        obj.id +
+        "</td><td>" +
+        obj.name +
+        "</td> <td >" +
+        obj.salary;
+      "</td></tr></table>";
+      
+      
+        }
+        document.getElementById("p1").innerHTML = src;
+
+    }
+</script>
+</html>
